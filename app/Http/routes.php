@@ -114,3 +114,5 @@ Route::group(['middleware' => 'web'], function () {
 
     Route::get('/home', 'HomeController@index');
 });
+
+Route::get('admin/index', ['uses' => 'admin\IndexController@index']);

@@ -5,7 +5,7 @@
 
         <div class="col-sm-5">
             <input type="text" name="Student[name]" class="form-control" id="name"
-                   value="{{old('Student')['name']?old('Student')['name']:$student->name}}"
+                   value="{{$student->name?$student->name:old('Student')['name']}}"
                    placeholder="请输入学生姓名">
         </div>
         <div class="col-sm-5">
